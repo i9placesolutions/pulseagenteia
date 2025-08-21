@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import { config } from './env'
+import { logger } from '../utils/logger'
 
 if (!config.supabase.url) {
   throw new Error('SUPABASE_URL deve ser configurada')
